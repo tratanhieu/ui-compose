@@ -6,4 +6,14 @@ export default {
   component: Button,
 };
 
-export const Default = (): React.ReactNode => <Button>Ok</Button>;
+export const Default = (): React.ReactNode => {
+  return <Button type="primary">Ok</Button>;
+};
+
+export const Primary = (): React.ReactNode => {
+  return <Button type="primary">Primary</Button>;
+};
+
+export const Test = (): React.ReactNode => {
+  return "Ok";
+};

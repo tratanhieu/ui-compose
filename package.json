@@ -9,7 +9,8 @@
     "build-storybook": "build-storybook",
     "build": "rollup -c",
     "lint": "eslint 'src/**/*.{js,ts,tsx}' --quiet --fix",
-    "test": "jest"
+    "test": "jest",
+    "reset": "rm -rf node_modules build yarn.lock && yarn"
   },
   "repository": {
     "type": "git",

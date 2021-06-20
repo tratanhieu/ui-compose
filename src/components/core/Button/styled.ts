@@ -7,8 +7,8 @@ export const ButtonStyled = styled.a`
   margin: 0.5rem 1rem;
   width: 11rem;
   background: transparent;
-  color: white;
-  border: 2px solid white;
+  color: black;
+  border: 2px solid #ccc;
 
   ${(props: any) =>
     props.primary &&
