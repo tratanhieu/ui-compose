@@ -1,5 +1,1 @@
-import plusTen from "./calc";
-
-export default {
-  plusTen
-};
+export { default as Button } from "./components/core/Button";
