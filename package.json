@@ -1,10 +1,13 @@
 {
   "name": "ui-compose",
-  "version": "0.0.32",
+  "version": "0.0.36",
   "description": "Devtus System Common",
   "main": "./index.js",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "exports": {
+    "./core/*": "./dist/core/*"
+  },
   "scripts": {
     "build": "rm -rf dist && tsc",
     "pack": "cd dist && npm pack",
