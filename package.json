@@ -1,18 +1,16 @@
 {
   "name": "ui-compose",
-  "version": "0.0.39",
+  "version": "0.0.48",
   "description": "Devtus System Common",
   "main": "./index.js",
-  "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
-  "exports": {
-    "./*": "./dist/*"
-  },
+  "module": "./index.js",
+  "types": "./index.d.ts",
   "scripts": {
     "build": "rm -rf dist && tsc",
     "pack": "cd dist && npm pack",
     "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\"",
-    "prettier": "prettier --write \"{src,tests,example/src}/**/*.{js,ts,jsx,tsx}\""
+    "prettier": "prettier --write \"{src,tests,example/src}/**/*.{js,ts,jsx,tsx}\"",
+    "release": "cp package.json ./dist && cd ./dist && npm publish"
   },
   "keywords": [
     "react",
@@ -37,7 +35,6 @@
     "eslint-plugin-prettier": "4.2.1",
     "eslint-plugin-react": "7.32.0",
     "eslint-plugin-react-hooks": "4.6.0",
-    "notistack": "2.0.8",
     "prettier": "2.8.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -46,8 +43,11 @@
     "yup": "0.32.11"
   },
   "files": [
-    "dist",
+    "./*",
     "LICENSE",
     "README.md"
-  ]
+  ],
+  "dependencies": {
+    "notistack": "^2.0.8"
+  }
 }
