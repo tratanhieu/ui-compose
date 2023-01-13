@@ -1,6 +1,6 @@
 {
   "name": "ui-compose",
-  "version": "0.0.48",
+  "version": "0.0.55",
   "description": "Devtus System Common",
   "main": "./index.js",
   "module": "./index.js",
@@ -25,6 +25,7 @@
   "devDependencies": {
     "@emotion/react": "11.10.5",
     "@emotion/styled": "11.10.5",
+    "@mui/icons-material": "^5.11.0",
     "@mui/material": "5.11.4",
     "@mui/styles": "5.11.2",
     "@types/react": "18.0.26",
@@ -48,6 +49,7 @@
     "README.md"
   ],
   "dependencies": {
+    "moment": "^2.29.4",
     "notistack": "^2.0.8"
   }
 }

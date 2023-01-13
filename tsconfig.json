@@ -5,6 +5,10 @@
       "node_modules"
     ],
     "compilerOptions": {
+      "baseUrl": ".",
+      "paths": {
+        "@/*": ["src/*"]
+      },
       "module": "esnext",
       "lib": ["dom", "esnext"],
       "importHelpers": true,
